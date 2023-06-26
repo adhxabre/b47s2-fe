@@ -1,4 +1,5 @@
 // import React Bootstrap components
+import { Form, Row, Col } from "react-bootstrap";
 
 // import css modules
 import cssModules from "./Form.module.css";
@@ -26,7 +27,6 @@ const styles = {
     borderRadius: ".25rem",
   },
 };
-
 
 function FormComponent() {
   return (
@@ -65,10 +65,19 @@ function FormComponent() {
           </select>
         </div>
         {/* code here */}
-
+        <Row>
+          <Form.Group as={Col} md="6">
+            <Form.Label>City</Form.Label>
+            <Form.Control type="text" placeholder="City" required />
+          </Form.Group>
+          <Form.Group as={Col} md="6">
+            <Form.Label>State</Form.Label>
+            <Form.Control type="text" placeholder="State" required />
+          </Form.Group>
+        </Row>
       </form>
     </div>
-  )
+  );
 }
 
-export default FormComponent
+export default FormComponent;
