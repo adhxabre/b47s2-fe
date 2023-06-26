@@ -11,7 +11,7 @@ function Form() {
           </label>
           <input
             id="username"
-            placeholder="Input username"
+            placeholder="Your Username"
             className="formInput"
           />
         </div>
@@ -22,11 +22,21 @@ function Form() {
           <input
             id="email"
             type="email"
-            placeholder="Input email"
+            placeholder="Your Email"
             className={cssModules.formInput}
           />
         </div>
         {/* code here */}
+        <div className="formGroup">
+          <label htmlFor="password" className="formLabel">
+            Password
+          </label>
+          <input
+            id="password"
+            placeholder="Your Password"
+            className="formInput"
+          />
+        </div>
       </form>
     </div>
   );
