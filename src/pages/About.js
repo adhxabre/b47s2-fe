@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 
 // import component
+import DetailAbout from "../components/DetailAbout";
 
 function About() {
   return (
@@ -17,6 +18,12 @@ function About() {
         tortor.
       </p>
       {/* code here */}
+      <DetailAbout
+        title="PT. Suksesindo Utama Margonda"
+        summary="No. 1 Anti-Korupsi"
+        total={1300}
+        rungkad={true}
+      />
     </Container>
   );
 }
