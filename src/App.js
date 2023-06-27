@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 // import component here
+import DetailUser from "./pages/DetailUser";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/signin" element={<SignIn />} />
         {/* define new route */}
+        <Route exact path="/users/:id" element={<DetailUser />} />
       </Routes>
     </Router>
   );
