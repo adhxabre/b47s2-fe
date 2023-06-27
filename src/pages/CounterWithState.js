@@ -3,10 +3,17 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 function CounterWithState() {
   // Init useState Here ...
+  const [counter, setCounter] = useState(0)
 
   // Create function for Handle Increment here ...
+  function Add() {
+    setCounter(counter + 1)
+  }
 
   // Create function for Handle decrement here ...
+  function Less() {
+    setCounter(counter - 1)
+  }
 
   return (
     <Container>
